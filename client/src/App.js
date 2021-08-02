@@ -88,8 +88,10 @@ export default function App() {
 
     listenToSuccessfulWithdraw();
 
+    const { address, contract } = appData;
     const { amount } = withdrawForm;
-    console.log(parseInt(amount));
+
+    await contract.methods.withdraw(parseInt(amount)).send({ from: address });
   }
 
   return (
