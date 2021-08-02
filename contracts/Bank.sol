@@ -18,7 +18,7 @@ contract Bank {
     if (accounts[user].exists) {
       accounts[user].balance += amount;
     } else {
-      Account memory newAccount = Account(0, name, true);
+      Account memory newAccount = Account(amount, name, true);
       accounts[user] = newAccount;
     }
 

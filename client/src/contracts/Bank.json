@@ -36,12 +36,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"smartContractBalance\",\"type\":\"uint256\"}],\"name\":\"SuccessfulPayment\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"storePayment\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":\"Bank\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":{\"keccak256\":\"0x9ee8b887e7f30d2455f7b3c4e35d83c328b68c36bb4800e3937b9c47489ea084\",\"urls\":[\"bzz-raw://83c5dd99c5341ad08e29929225e71713492d758d60e09bc77a0c237b63079ce3\",\"dweb:/ipfs/QmYTR7DQk2GGeT2m2nxHXEiZA8BFLmxN4xJaEe7h4AEouH\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b50610385806100206000396000f3fe60806040526004361061001e5760003560e01c80631c9ed02b14610023575b600080fd5b6100dc6004803603602081101561003957600080fd5b810190808035906020019064010000000081111561005657600080fd5b82018360208201111561006857600080fd5b8035906020019184600183028401116401000000008311171561008a57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100de565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff161561019057816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610244565b610198610288565b604051806060016040528060008152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061021e9291906102ab565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7fb42c3c8de4e4e86bb9c8140b08aa9a1a06713d1d30c09a1268f48f8f98ca3d598247604051808381526020018281526020019250505060405180910390a1505050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102ec57805160ff191683800117855561031a565b8280016001018555821561031a579182015b828111156103195782518255916020019190600101906102fe565b5b509050610327919061032b565b5090565b61034d91905b80821115610349576000816000905550600101610331565b5090565b9056fea265627a7a72315820789966197fd0093851f581a1e922a3ad4b5226d9dddfa10058dcae71780d121b64736f6c63430005100032",
-  "deployedBytecode": "0x60806040526004361061001e5760003560e01c80631c9ed02b14610023575b600080fd5b6100dc6004803603602081101561003957600080fd5b810190808035906020019064010000000081111561005657600080fd5b82018360208201111561006857600080fd5b8035906020019184600183028401116401000000008311171561008a57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100de565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff161561019057816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610244565b610198610288565b604051806060016040528060008152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061021e9291906102ab565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7fb42c3c8de4e4e86bb9c8140b08aa9a1a06713d1d30c09a1268f48f8f98ca3d598247604051808381526020018281526020019250505060405180910390a1505050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102ec57805160ff191683800117855561031a565b8280016001018555821561031a579182015b828111156103195782518255916020019190600101906102fe565b5b509050610327919061032b565b5090565b61034d91905b80821115610349576000816000905550600101610331565b5090565b9056fea265627a7a72315820789966197fd0093851f581a1e922a3ad4b5226d9dddfa10058dcae71780d121b64736f6c63430005100032",
-  "sourceMap": "36:616:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:616:0;;;;;;;",
-  "deployedSourceMap": "36:616:0:-;;;;;;;;;;;;;;;;;;;;;261:388;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;261:388:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;261:388:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;261:388:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;261:388:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;261:388:0;;;;;;;;;;;;;;;:::i;:::-;;;325:11;339:9;325:23;;355:20;378:10;355:33;;401:8;:14;410:4;401:14;;;;;;;;;;;;;;;:21;;;;;;;;;;;;397:185;;;459:6;433:8;:14;442:4;433:14;;;;;;;;;;;;;;;:22;;;:32;;;;;;;;;;;397:185;;;488:25;;:::i;:::-;516:22;;;;;;;;524:1;516:22;;;;527:4;516:22;;;;533:4;516:22;;;;;488:50;;564:10;547:8;:14;556:4;547:14;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;397:185;;595:48;613:6;621:21;595:48;;;;;;;;;;;;;;;;;;;;;;;;261:388;;;:::o;36:616::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.21 <0.7.0;\r\n\r\ncontract Bank {\r\n  mapping (address => Account) accounts;\r\n\r\n  struct Account {\r\n    uint balance;\r\n    string messageHistory;\r\n    bool exists;\r\n  }\r\n\r\n  event SuccessfulPayment(uint amount, uint smartContractBalance);\r\n\r\n  function storePayment(string memory name) public payable {\r\n    uint amount = msg.value;\r\n    address payable user = msg.sender;\r\n\r\n    if (accounts[user].exists) {\r\n      accounts[user].balance += amount;\r\n    } else {\r\n      Account memory newAccount = Account(0, name, true);\r\n      accounts[user] = newAccount;\r\n    }\r\n\r\n    emit SuccessfulPayment(amount, address(this).balance);\r\n  }\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"smartContractBalance\",\"type\":\"uint256\"}],\"name\":\"SuccessfulPayment\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"storePayment\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":\"Bank\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":{\"keccak256\":\"0xd1265458b4e23ab166b8a4616dd118397bc7142318ae8ead8c7bb7a4f5900af6\",\"urls\":[\"bzz-raw://0b96ed5de151d2bc7a3e8b65cb433aa58873747ce87ed501ba611af8843bf377\",\"dweb:/ipfs/QmX75zwQwTdEQKzSecrKnHW8TwKGKGVWfT1DkvhbJBhhXj\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610384806100206000396000f3fe60806040526004361061001e5760003560e01c80631c9ed02b14610023575b600080fd5b6100dc6004803603602081101561003957600080fd5b810190808035906020019064010000000081111561005657600080fd5b82018360208201111561006857600080fd5b8035906020019184600183028401116401000000008311171561008a57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100de565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff161561019057816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610243565b610198610287565b6040518060600160405280848152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061021d9291906102aa565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7fb42c3c8de4e4e86bb9c8140b08aa9a1a06713d1d30c09a1268f48f8f98ca3d598247604051808381526020018281526020019250505060405180910390a1505050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102eb57805160ff1916838001178555610319565b82800160010185558215610319579182015b828111156103185782518255916020019190600101906102fd565b5b509050610326919061032a565b5090565b61034c91905b80821115610348576000816000905550600101610330565b5090565b9056fea265627a7a72315820d3cb7b003e3537487add9b693b19852862dc3a671df7e14206cbb7cbd2de6a2d64736f6c63430005100032",
+  "deployedBytecode": "0x60806040526004361061001e5760003560e01c80631c9ed02b14610023575b600080fd5b6100dc6004803603602081101561003957600080fd5b810190808035906020019064010000000081111561005657600080fd5b82018360208201111561006857600080fd5b8035906020019184600183028401116401000000008311171561008a57600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f8201169050808301925050505050505091929192905050506100de565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff161561019057816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610243565b610198610287565b6040518060600160405280848152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061021d9291906102aa565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7fb42c3c8de4e4e86bb9c8140b08aa9a1a06713d1d30c09a1268f48f8f98ca3d598247604051808381526020018281526020019250505060405180910390a1505050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106102eb57805160ff1916838001178555610319565b82800160010185558215610319579182015b828111156103185782518255916020019190600101906102fd565b5b509050610326919061032a565b5090565b61034c91905b80821115610348576000816000905550600101610330565b5090565b9056fea265627a7a72315820d3cb7b003e3537487add9b693b19852862dc3a671df7e14206cbb7cbd2de6a2d64736f6c63430005100032",
+  "sourceMap": "36:621:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:621:0;;;;;;;",
+  "deployedSourceMap": "36:621:0:-;;;;;;;;;;;;;;;;;;;;;261:393;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;261:393:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;261:393:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;261:393:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;261:393:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;261:393:0;;;;;;;;;;;;;;;:::i;:::-;;;325:11;339:9;325:23;;355:20;378:10;355:33;;401:8;:14;410:4;401:14;;;;;;;;;;;;;;;:21;;;;;;;;;;;;397:190;;;459:6;433:8;:14;442:4;433:14;;;;;;;;;;;;;;;:22;;;:32;;;;;;;;;;;397:190;;;488:25;;:::i;:::-;516:27;;;;;;;;524:6;516:27;;;;532:4;516:27;;;;538:4;516:27;;;;;488:55;;569:10;552:8;:14;561:4;552:14;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;397:190;;600:48;618:6;626:21;600:48;;;;;;;;;;;;;;;;;;;;;;;;261:393;;;:::o;36:621::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\r\n\r\ncontract Bank {\r\n  mapping (address => Account) accounts;\r\n\r\n  struct Account {\r\n    uint balance;\r\n    string messageHistory;\r\n    bool exists;\r\n  }\r\n\r\n  event SuccessfulPayment(uint amount, uint smartContractBalance);\r\n\r\n  function storePayment(string memory name) public payable {\r\n    uint amount = msg.value;\r\n    address payable user = msg.sender;\r\n\r\n    if (accounts[user].exists) {\r\n      accounts[user].balance += amount;\r\n    } else {\r\n      Account memory newAccount = Account(amount, name, true);\r\n      accounts[user] = newAccount;\r\n    }\r\n\r\n    emit SuccessfulPayment(amount, address(this).balance);\r\n  }\r\n}",
   "sourcePath": "C:/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol",
   "ast": {
     "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol",
@@ -289,7 +289,7 @@
             "body": {
               "id": 69,
               "nodeType": "Block",
-              "src": "318:331:0",
+              "src": "318:336:0",
               "statements": [
                 {
                   "assignments": [
@@ -482,7 +482,7 @@
                   "falseBody": {
                     "id": 59,
                     "nodeType": "Block",
-                    "src": "479:103:0",
+                    "src": "479:108:0",
                     "statements": [
                       {
                         "assignments": [
@@ -524,21 +524,16 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "hexValue": "30",
                               "id": 48,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "kind": "number",
-                              "lValueRequested": false,
-                              "nodeType": "Literal",
-                              "src": "524:1:0",
-                              "subdenomination": null,
+                              "name": "amount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 24,
+                              "src": "524:6:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_rational_0_by_1",
-                                "typeString": "int_const 0"
-                              },
-                              "value": "0"
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
                             },
                             {
                               "argumentTypes": null,
@@ -547,7 +542,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 20,
-                              "src": "527:4:0",
+                              "src": "532:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
@@ -563,7 +558,7 @@
                               "kind": "bool",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "533:4:0",
+                              "src": "538:4:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bool",
@@ -575,8 +570,8 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_rational_0_by_1",
-                                "typeString": "int_const 0"
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
                               },
                               {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -606,14 +601,14 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "516:22:0",
+                          "src": "516:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_memory",
                             "typeString": "struct Bank.Account memory"
                           }
                         },
                         "nodeType": "VariableDeclarationStatement",
-                        "src": "488:50:0"
+                        "src": "488:55:0"
                       },
                       {
                         "expression": {
@@ -632,7 +627,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 5,
-                              "src": "547:8:0",
+                              "src": "552:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                                 "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -646,7 +641,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 29,
-                              "src": "556:4:0",
+                              "src": "561:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
@@ -657,7 +652,7 @@
                             "isPure": false,
                             "lValueRequested": true,
                             "nodeType": "IndexAccess",
-                            "src": "547:14:0",
+                            "src": "552:14:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_storage",
                               "typeString": "struct Bank.Account storage ref"
@@ -672,13 +667,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 46,
-                            "src": "564:10:0",
+                            "src": "569:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_memory_ptr",
                               "typeString": "struct Bank.Account memory"
                             }
                           },
-                          "src": "547:27:0",
+                          "src": "552:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_storage",
                             "typeString": "struct Bank.Account storage ref"
@@ -686,13 +681,13 @@
                         },
                         "id": 58,
                         "nodeType": "ExpressionStatement",
-                        "src": "547:27:0"
+                        "src": "552:27:0"
                       }
                     ]
                   },
                   "id": 60,
                   "nodeType": "IfStatement",
-                  "src": "397:185:0",
+                  "src": "397:190:0",
                   "trueBody": {
                     "id": 44,
                     "nodeType": "Block",
@@ -801,7 +796,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 24,
-                        "src": "613:6:0",
+                        "src": "618:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -819,7 +814,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 137,
-                              "src": "629:4:0",
+                              "src": "634:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Bank_$71",
                                 "typeString": "contract Bank"
@@ -839,7 +834,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "621:7:0",
+                            "src": "626:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -854,7 +849,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "621:13:0",
+                          "src": "626:13:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -868,7 +863,7 @@
                         "memberName": "balance",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "621:21:0",
+                        "src": "626:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -891,7 +886,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "595:17:0",
+                      "src": "600:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
@@ -905,7 +900,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "595:48:0",
+                    "src": "600:48:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -913,7 +908,7 @@
                   },
                   "id": 68,
                   "nodeType": "EmitStatement",
-                  "src": "590:53:0"
+                  "src": "595:53:0"
                 }
               ]
             },
@@ -964,17 +959,17 @@
               "src": "318:0:0"
             },
             "scope": 71,
-            "src": "261:388:0",
+            "src": "261:393:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 72,
-        "src": "36:616:0"
+        "src": "36:621:0"
       }
     ],
-    "src": "0:652:0"
+    "src": "0:657:0"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol",
@@ -1222,7 +1217,7 @@
             "body": {
               "id": 69,
               "nodeType": "Block",
-              "src": "318:331:0",
+              "src": "318:336:0",
               "statements": [
                 {
                   "assignments": [
@@ -1415,7 +1410,7 @@
                   "falseBody": {
                     "id": 59,
                     "nodeType": "Block",
-                    "src": "479:103:0",
+                    "src": "479:108:0",
                     "statements": [
                       {
                         "assignments": [
@@ -1457,21 +1452,16 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "hexValue": "30",
                               "id": 48,
-                              "isConstant": false,
-                              "isLValue": false,
-                              "isPure": true,
-                              "kind": "number",
-                              "lValueRequested": false,
-                              "nodeType": "Literal",
-                              "src": "524:1:0",
-                              "subdenomination": null,
+                              "name": "amount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 24,
+                              "src": "524:6:0",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_rational_0_by_1",
-                                "typeString": "int_const 0"
-                              },
-                              "value": "0"
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
                             },
                             {
                               "argumentTypes": null,
@@ -1480,7 +1470,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 20,
-                              "src": "527:4:0",
+                              "src": "532:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
@@ -1496,7 +1486,7 @@
                               "kind": "bool",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "533:4:0",
+                              "src": "538:4:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bool",
@@ -1508,8 +1498,8 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_rational_0_by_1",
-                                "typeString": "int_const 0"
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
                               },
                               {
                                 "typeIdentifier": "t_string_memory_ptr",
@@ -1539,14 +1529,14 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "516:22:0",
+                          "src": "516:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_memory",
                             "typeString": "struct Bank.Account memory"
                           }
                         },
                         "nodeType": "VariableDeclarationStatement",
-                        "src": "488:50:0"
+                        "src": "488:55:0"
                       },
                       {
                         "expression": {
@@ -1565,7 +1555,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 5,
-                              "src": "547:8:0",
+                              "src": "552:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                                 "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -1579,7 +1569,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 29,
-                              "src": "556:4:0",
+                              "src": "561:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
@@ -1590,7 +1580,7 @@
                             "isPure": false,
                             "lValueRequested": true,
                             "nodeType": "IndexAccess",
-                            "src": "547:14:0",
+                            "src": "552:14:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_storage",
                               "typeString": "struct Bank.Account storage ref"
@@ -1605,13 +1595,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 46,
-                            "src": "564:10:0",
+                            "src": "569:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_memory_ptr",
                               "typeString": "struct Bank.Account memory"
                             }
                           },
-                          "src": "547:27:0",
+                          "src": "552:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_storage",
                             "typeString": "struct Bank.Account storage ref"
@@ -1619,13 +1609,13 @@
                         },
                         "id": 58,
                         "nodeType": "ExpressionStatement",
-                        "src": "547:27:0"
+                        "src": "552:27:0"
                       }
                     ]
                   },
                   "id": 60,
                   "nodeType": "IfStatement",
-                  "src": "397:185:0",
+                  "src": "397:190:0",
                   "trueBody": {
                     "id": 44,
                     "nodeType": "Block",
@@ -1734,7 +1724,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 24,
-                        "src": "613:6:0",
+                        "src": "618:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1752,7 +1742,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 137,
-                              "src": "629:4:0",
+                              "src": "634:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Bank_$71",
                                 "typeString": "contract Bank"
@@ -1772,7 +1762,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "621:7:0",
+                            "src": "626:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -1787,7 +1777,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "621:13:0",
+                          "src": "626:13:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1801,7 +1791,7 @@
                         "memberName": "balance",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "621:21:0",
+                        "src": "626:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1824,7 +1814,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "595:17:0",
+                      "src": "600:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
@@ -1838,7 +1828,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "595:48:0",
+                    "src": "600:48:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1846,7 +1836,7 @@
                   },
                   "id": 68,
                   "nodeType": "EmitStatement",
-                  "src": "590:53:0"
+                  "src": "595:53:0"
                 }
               ]
             },
@@ -1897,17 +1887,17 @@
               "src": "318:0:0"
             },
             "scope": 71,
-            "src": "261:388:0",
+            "src": "261:393:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 72,
-        "src": "36:616:0"
+        "src": "36:621:0"
       }
     ],
-    "src": "0:652:0"
+    "src": "0:657:0"
   },
   "compiler": {
     "name": "solc",
@@ -1942,8 +1932,7 @@
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-08-01T18:36:22.473Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-08-02T13:34:00.667Z",
   "devdoc": {
     "methods": {}
   },
