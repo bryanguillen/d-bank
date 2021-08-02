@@ -10,6 +10,7 @@ contract Bank {
   }
 
   event SuccessfulDeposit(uint amount, uint smartContractBalance);
+  event SuccessfulWithdrawl(uint amount, uint remainingBalance);
 
   function storePayment(string memory name) public payable {
     uint amount = msg.value;
@@ -22,6 +23,24 @@ contract Bank {
       accounts[user] = newAccount;
     }
 
+    /**
+     * When to use an event versus return?
+     */
     emit SuccessfulDeposit(amount, address(this).balance);
+  }
+
+  function withdraw(uint amount) public {
+    address payable user = msg.sender;
+    
+    // add some require statements to make this safe
+
+    // send
+    user.transfer(amount);
+
+    // deduct from balance
+    accounts[user].balance -= amount;
+
+    // emit event
+    emit SuccessfulWithdrawl(amount, accounts[user].balance);
   }
 }
