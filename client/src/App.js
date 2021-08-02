@@ -35,9 +35,9 @@ export default function App() {
     })();
   }, []);
 
-  function listenToSuccessfulPayment() {
+  function listenToSuccessfulDeposit() {
     const { contract } = appData;
-    contract.events.SuccessfulPayment({}, (error, event) => {
+    contract.events.SuccessfulDeposit({}, (error, event) => {
       if (error) console.log(error);
       else console.log(event);
     });
@@ -51,7 +51,7 @@ export default function App() {
   async function onSubmit(event) {
     event.preventDefault();
 
-    listenToSuccessfulPayment();
+    listenToSuccessfulDeposit();
 
     const { name, amount } = depositForm;
     const { contract, address } = appData;

@@ -9,7 +9,7 @@ contract Bank {
     bool exists;
   }
 
-  event SuccessfulPayment(uint amount, uint smartContractBalance);
+  event SuccessfulDeposit(uint amount, uint smartContractBalance);
 
   function storePayment(string memory name) public payable {
     uint amount = msg.value;
@@ -22,6 +22,6 @@ contract Bank {
       accounts[user] = newAccount;
     }
 
-    emit SuccessfulPayment(amount, address(this).balance);
+    emit SuccessfulDeposit(amount, address(this).balance);
   }
 }
