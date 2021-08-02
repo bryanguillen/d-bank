@@ -44,6 +44,14 @@ export default function App() {
     });
   }
 
+  function listenToSuccessfulWithdraw() {
+    const { contract } = appData;
+    contract.events.SuccessfulWithdraw({}, (error, event) => {
+      if (error) console.log(error);
+      else console.log(event);
+    });
+  }
+
   function onChange(event) {
     const { name, value } = event.target;
     setDepositForm(previousState => ({...previousState, [name]: value}));
@@ -67,6 +75,8 @@ export default function App() {
   
   async function onSubmitWithdraw(event) {
     event.preventDefault();
+
+    listenToSuccessfulWithdraw();
 
     const { amount } = withdrawForm;
     console.log(parseInt(amount));
