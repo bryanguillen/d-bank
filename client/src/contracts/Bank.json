@@ -36,7 +36,7 @@
           "type": "uint256"
         }
       ],
-      "name": "SuccessfulWithdrawl",
+      "name": "SuccessfulWithdraw",
       "type": "event"
     },
     {
@@ -70,12 +70,12 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"smartContractBalance\",\"type\":\"uint256\"}],\"name\":\"SuccessfulDeposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"remainingBalance\",\"type\":\"uint256\"}],\"name\":\"SuccessfulWithdrawl\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"storePayment\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":\"Bank\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":{\"keccak256\":\"0x76a0aa87518e6b7100215e2cdc3392de5de4884e1101aba97d07abf504800b71\",\"urls\":[\"bzz-raw://3e2caf98f296d776c77c3d6179f7cc1177d2f785480dd91c6046e9458ca15ee2\",\"dweb:/ipfs/QmbhhKkZVdmWJcmye1DjnNsNZJFfCfTUmUzJXzXvsHB3Lh\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506104e9806100206000396000f3fe6080604052600436106100295760003560e01c80631c9ed02b1461002e5780632e1a7d4d146100e9575b600080fd5b6100e76004803603602081101561004457600080fd5b810190808035906020019064010000000081111561006157600080fd5b82018360208201111561007357600080fd5b8035906020019184600183028401116401000000008311171561009557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610124565b005b3480156100f557600080fd5b506101226004803603602081101561010c57600080fd5b81019080803590602001909291905050506102cd565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff16156101d657816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610289565b6101de6103ec565b6040518060600160405280848152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061026392919061040f565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7f4230e89da735c392fbe56bbb29b0b0f4df50e7001cd560e52ffdae3662ad8b6e8247604051808381526020018281526020019250505060405180910390a1505050565b60003390508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050158015610318573d6000803e3d6000fd5b50816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001600082825403925050819055507fa69b6418a36de3e497da8b5d257b04e815d6822c84ea14853c9094cdf389d7bc826000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154604051808381526020018281526020019250505060405180910390a15050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061045057805160ff191683800117855561047e565b8280016001018555821561047e579182015b8281111561047d578251825591602001919060010190610462565b5b50905061048b919061048f565b5090565b6104b191905b808211156104ad576000816000905550600101610495565b5090565b9056fea265627a7a7231582070c8d8a02d958fe8ac1ec95ad6fdcbdd20491421207eda6c4be2fa31d4ddd2fa64736f6c63430005100032",
-  "deployedBytecode": "0x6080604052600436106100295760003560e01c80631c9ed02b1461002e5780632e1a7d4d146100e9575b600080fd5b6100e76004803603602081101561004457600080fd5b810190808035906020019064010000000081111561006157600080fd5b82018360208201111561007357600080fd5b8035906020019184600183028401116401000000008311171561009557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610124565b005b3480156100f557600080fd5b506101226004803603602081101561010c57600080fd5b81019080803590602001909291905050506102cd565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff16156101d657816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610289565b6101de6103ec565b6040518060600160405280848152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061026392919061040f565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7f4230e89da735c392fbe56bbb29b0b0f4df50e7001cd560e52ffdae3662ad8b6e8247604051808381526020018281526020019250505060405180910390a1505050565b60003390508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050158015610318573d6000803e3d6000fd5b50816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001600082825403925050819055507fa69b6418a36de3e497da8b5d257b04e815d6822c84ea14853c9094cdf389d7bc826000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154604051808381526020018281526020019250505060405180910390a15050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061045057805160ff191683800117855561047e565b8280016001018555821561047e579182015b8281111561047d578251825591602001919060010190610462565b5b50905061048b919061048f565b5090565b6104b191905b808211156104ad576000816000905550600101610495565b5090565b9056fea265627a7a7231582070c8d8a02d958fe8ac1ec95ad6fdcbdd20491421207eda6c4be2fa31d4ddd2fa64736f6c63430005100032",
-  "sourceMap": "36:1095:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:1095:0;;;;;;;",
-  "deployedSourceMap": "36:1095:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;327:455;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;327:455:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;327:455:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;327:455:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;327:455:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;327:455:0;;;;;;;;;;;;;;;:::i;:::-;;788:340;;8:9:-1;5:2;;;30:1;27;20:12;5:2;788:340:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;788:340:0;;;;;;;;;;;;;;;;;:::i;:::-;;327:455;391:11;405:9;391:23;;421:20;444:10;421:33;;467:8;:14;476:4;467:14;;;;;;;;;;;;;;;:21;;;;;;;;;;;;463:190;;;525:6;499:8;:14;508:4;499:14;;;;;;;;;;;;;;;:22;;;:32;;;;;;;;;;;463:190;;;554:25;;:::i;:::-;582:27;;;;;;;;590:6;582:27;;;;598:4;582:27;;;;604:4;582:27;;;;;554:55;;635:10;618:8;:14;627:4;618:14;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;463:190;;728:48;746:6;754:21;728:48;;;;;;;;;;;;;;;;;;;;;;;;327:455;;;:::o;788:340::-;833:20;856:10;833:33;;948:4;:13;;:21;962:6;948:21;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;948:21:0;1032:6;1006:8;:14;1015:4;1006:14;;;;;;;;;;;;;;;:22;;;:32;;;;;;;;;;;1071:51;1091:6;1099:8;:14;1108:4;1099:14;;;;;;;;;;;;;;;:22;;;1071:51;;;;;;;;;;;;;;;;;;;;;;;;788:340;;:::o;36:1095::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
-  "source": "pragma solidity >=0.4.21 <0.7.0;\r\n\r\ncontract Bank {\r\n  mapping (address => Account) accounts;\r\n\r\n  struct Account {\r\n    uint balance;\r\n    string messageHistory;\r\n    bool exists;\r\n  }\r\n\r\n  event SuccessfulDeposit(uint amount, uint smartContractBalance);\r\n  event SuccessfulWithdrawl(uint amount, uint remainingBalance);\r\n\r\n  function storePayment(string memory name) public payable {\r\n    uint amount = msg.value;\r\n    address payable user = msg.sender;\r\n\r\n    if (accounts[user].exists) {\r\n      accounts[user].balance += amount;\r\n    } else {\r\n      Account memory newAccount = Account(amount, name, true);\r\n      accounts[user] = newAccount;\r\n    }\r\n\r\n    /**\r\n     * When to use an event versus return?\r\n     */\r\n    emit SuccessfulDeposit(amount, address(this).balance);\r\n  }\r\n\r\n  function withdraw(uint amount) public {\r\n    address payable user = msg.sender;\r\n    \r\n    // add some require statements to make this safe\r\n\r\n    // send\r\n    user.transfer(amount);\r\n\r\n    // deduct from balance\r\n    accounts[user].balance -= amount;\r\n\r\n    // emit event\r\n    emit SuccessfulWithdrawl(amount, accounts[user].balance);\r\n  }\r\n}",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"smartContractBalance\",\"type\":\"uint256\"}],\"name\":\"SuccessfulDeposit\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"remainingBalance\",\"type\":\"uint256\"}],\"name\":\"SuccessfulWithdraw\",\"type\":\"event\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"string\",\"name\":\"name\",\"type\":\"string\"}],\"name\":\"storePayment\",\"outputs\":[],\"payable\":true,\"stateMutability\":\"payable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"amount\",\"type\":\"uint256\"}],\"name\":\"withdraw\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":\"Bank\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol\":{\"keccak256\":\"0x0d8b843a10d0267fd5f90bb2bd25910fee47864f321bd53d9851a0ca10eb5970\",\"urls\":[\"bzz-raw://7d25bae7f90f14e8b00ad85fcbd7c1d9dc6a565cd88ac46fdaa77a1f4393e015\",\"dweb:/ipfs/QmagNsrVeD5tKQuYGBH74FEtGMDCNghVn3UVxaQoibdise\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506104e9806100206000396000f3fe6080604052600436106100295760003560e01c80631c9ed02b1461002e5780632e1a7d4d146100e9575b600080fd5b6100e76004803603602081101561004457600080fd5b810190808035906020019064010000000081111561006157600080fd5b82018360208201111561007357600080fd5b8035906020019184600183028401116401000000008311171561009557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610124565b005b3480156100f557600080fd5b506101226004803603602081101561010c57600080fd5b81019080803590602001909291905050506102cd565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff16156101d657816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610289565b6101de6103ec565b6040518060600160405280848152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061026392919061040f565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7f4230e89da735c392fbe56bbb29b0b0f4df50e7001cd560e52ffdae3662ad8b6e8247604051808381526020018281526020019250505060405180910390a1505050565b60003390508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050158015610318573d6000803e3d6000fd5b50816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001600082825403925050819055507f87d403c827bfbbc4c16caf5411239cf6e997f81378ff2851af606141e8aeb4d3826000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154604051808381526020018281526020019250505060405180910390a15050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061045057805160ff191683800117855561047e565b8280016001018555821561047e579182015b8281111561047d578251825591602001919060010190610462565b5b50905061048b919061048f565b5090565b6104b191905b808211156104ad576000816000905550600101610495565b5090565b9056fea265627a7a7231582010e78d5cee0474de13f0ef80d9c25b6f707846cd2c1bc93bc80bdcc3e44f355d64736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600436106100295760003560e01c80631c9ed02b1461002e5780632e1a7d4d146100e9575b600080fd5b6100e76004803603602081101561004457600080fd5b810190808035906020019064010000000081111561006157600080fd5b82018360208201111561007357600080fd5b8035906020019184600183028401116401000000008311171561009557600080fd5b91908080601f016020809104026020016040519081016040528093929190818152602001838380828437600081840152601f19601f820116905080830192505050505050509192919290505050610124565b005b3480156100f557600080fd5b506101226004803603602081101561010c57600080fd5b81019080803590602001909291905050506102cd565b005b600034905060003390506000808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060020160009054906101000a900460ff16156101d657816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000160008282540192505081905550610289565b6101de6103ec565b6040518060600160405280848152602001858152602001600115158152509050806000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060008201518160000155602082015181600101908051906020019061026392919061040f565b5060408201518160020160006101000a81548160ff021916908315150217905550905050505b7f4230e89da735c392fbe56bbb29b0b0f4df50e7001cd560e52ffdae3662ad8b6e8247604051808381526020018281526020019250505060405180910390a1505050565b60003390508073ffffffffffffffffffffffffffffffffffffffff166108fc839081150290604051600060405180830381858888f19350505050158015610318573d6000803e3d6000fd5b50816000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600001600082825403925050819055507f87d403c827bfbbc4c16caf5411239cf6e997f81378ff2851af606141e8aeb4d3826000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000154604051808381526020018281526020019250505060405180910390a15050565b604051806060016040528060008152602001606081526020016000151581525090565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061045057805160ff191683800117855561047e565b8280016001018555821561047e579182015b8281111561047d578251825591602001919060010190610462565b5b50905061048b919061048f565b5090565b6104b191905b808211156104ad576000816000905550600101610495565b5090565b9056fea265627a7a7231582010e78d5cee0474de13f0ef80d9c25b6f707846cd2c1bc93bc80bdcc3e44f355d64736f6c63430005100032",
+  "sourceMap": "36:1093:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:1093:0;;;;;;;",
+  "deployedSourceMap": "36:1093:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;326:455;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;326:455:0;;;;;;;;;;21:11:-1;8;5:28;2:2;;;46:1;43;36:12;2:2;326:455:0;;35:9:-1;28:4;12:14;8:25;5:40;2:2;;;58:1;55;48:12;2:2;326:455:0;;;;;;100:9:-1;95:1;81:12;77:20;67:8;63:35;60:50;39:11;25:12;22:29;11:107;8:2;;;131:1;128;121:12;8:2;326:455:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;30:3:-1;22:6;14;1:33;99:1;93:3;85:6;81:16;74:27;137:4;133:9;126:4;121:3;117:14;113:30;106:37;;169:3;161:6;157:16;147:26;;326:455:0;;;;;;;;;;;;;;;:::i;:::-;;787:339;;8:9:-1;5:2;;;30:1;27;20:12;5:2;787:339:0;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;787:339:0;;;;;;;;;;;;;;;;;:::i;:::-;;326:455;390:11;404:9;390:23;;420:20;443:10;420:33;;466:8;:14;475:4;466:14;;;;;;;;;;;;;;;:21;;;;;;;;;;;;462:190;;;524:6;498:8;:14;507:4;498:14;;;;;;;;;;;;;;;:22;;;:32;;;;;;;;;;;462:190;;;553:25;;:::i;:::-;581:27;;;;;;;;589:6;581:27;;;;597:4;581:27;;;;603:4;581:27;;;;;553:55;;634:10;617:8;:14;626:4;617:14;;;;;;;;;;;;;;;:27;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;462:190;;727:48;745:6;753:21;727:48;;;;;;;;;;;;;;;;;;;;;;;;326:455;;;:::o;787:339::-;832:20;855:10;832:33;;947:4;:13;;:21;961:6;947:21;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;947:21:0;1031:6;1005:8;:14;1014:4;1005:14;;;;;;;;;;;;;;;:22;;;:32;;;;;;;;;;;1070:50;1089:6;1097:8;:14;1106:4;1097:14;;;;;;;;;;;;;;;:22;;;1070:50;;;;;;;;;;;;;;;;;;;;;;;;787:339;;:::o;36:1093::-;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\r\n\r\ncontract Bank {\r\n  mapping (address => Account) accounts;\r\n\r\n  struct Account {\r\n    uint balance;\r\n    string messageHistory;\r\n    bool exists;\r\n  }\r\n\r\n  event SuccessfulDeposit(uint amount, uint smartContractBalance);\r\n  event SuccessfulWithdraw(uint amount, uint remainingBalance);\r\n\r\n  function storePayment(string memory name) public payable {\r\n    uint amount = msg.value;\r\n    address payable user = msg.sender;\r\n\r\n    if (accounts[user].exists) {\r\n      accounts[user].balance += amount;\r\n    } else {\r\n      Account memory newAccount = Account(amount, name, true);\r\n      accounts[user] = newAccount;\r\n    }\r\n\r\n    /**\r\n     * When to use an event versus return?\r\n     */\r\n    emit SuccessfulDeposit(amount, address(this).balance);\r\n  }\r\n\r\n  function withdraw(uint amount) public {\r\n    address payable user = msg.sender;\r\n    \r\n    // add some require statements to make this safe\r\n\r\n    // send\r\n    user.transfer(amount);\r\n\r\n    // deduct from balance\r\n    accounts[user].balance -= amount;\r\n\r\n    // emit event\r\n    emit SuccessfulWithdraw(amount, accounts[user].balance);\r\n  }\r\n}",
   "sourcePath": "C:/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol",
   "ast": {
     "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol",
@@ -323,7 +323,7 @@
             "anonymous": false,
             "documentation": null,
             "id": 24,
-            "name": "SuccessfulWithdrawl",
+            "name": "SuccessfulWithdraw",
             "nodeType": "EventDefinition",
             "parameters": {
               "id": 23,
@@ -336,7 +336,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 24,
-                  "src": "285:11:0",
+                  "src": "284:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -347,7 +347,7 @@
                     "id": 19,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "285:4:0",
+                    "src": "284:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -363,7 +363,7 @@
                   "name": "remainingBalance",
                   "nodeType": "VariableDeclaration",
                   "scope": 24,
-                  "src": "298:21:0",
+                  "src": "297:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -374,7 +374,7 @@
                     "id": 21,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "298:4:0",
+                    "src": "297:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -384,15 +384,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "284:36:0"
+              "src": "283:36:0"
             },
-            "src": "259:62:0"
+            "src": "259:61:0"
           },
           {
             "body": {
               "id": 75,
               "nodeType": "Block",
-              "src": "384:398:0",
+              "src": "383:398:0",
               "statements": [
                 {
                   "assignments": [
@@ -405,7 +405,7 @@
                       "name": "amount",
                       "nodeType": "VariableDeclaration",
                       "scope": 75,
-                      "src": "391:11:0",
+                      "src": "390:11:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -416,7 +416,7 @@
                         "id": 29,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "391:4:0",
+                        "src": "390:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -436,7 +436,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 161,
-                      "src": "405:3:0",
+                      "src": "404:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -450,14 +450,14 @@
                     "memberName": "value",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "405:9:0",
+                    "src": "404:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "391:23:0"
+                  "src": "390:23:0"
                 },
                 {
                   "assignments": [
@@ -470,7 +470,7 @@
                       "name": "user",
                       "nodeType": "VariableDeclaration",
                       "scope": 75,
-                      "src": "421:20:0",
+                      "src": "420:20:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -481,7 +481,7 @@
                         "id": 34,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "421:15:0",
+                        "src": "420:15:0",
                         "stateMutability": "payable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -502,7 +502,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 161,
-                      "src": "444:3:0",
+                      "src": "443:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -516,14 +516,14 @@
                     "memberName": "sender",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "444:10:0",
+                    "src": "443:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "421:33:0"
+                  "src": "420:33:0"
                 },
                 {
                   "condition": {
@@ -537,7 +537,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 5,
-                        "src": "467:8:0",
+                        "src": "466:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                           "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -551,7 +551,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 35,
-                        "src": "476:4:0",
+                        "src": "475:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -562,7 +562,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "467:14:0",
+                      "src": "466:14:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Account_$12_storage",
                         "typeString": "struct Bank.Account storage ref"
@@ -576,7 +576,7 @@
                     "memberName": "exists",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 11,
-                    "src": "467:21:0",
+                    "src": "466:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -585,7 +585,7 @@
                   "falseBody": {
                     "id": 65,
                     "nodeType": "Block",
-                    "src": "545:108:0",
+                    "src": "544:108:0",
                     "statements": [
                       {
                         "assignments": [
@@ -598,7 +598,7 @@
                             "name": "newAccount",
                             "nodeType": "VariableDeclaration",
                             "scope": 65,
-                            "src": "554:25:0",
+                            "src": "553:25:0",
                             "stateVariable": false,
                             "storageLocation": "memory",
                             "typeDescriptions": {
@@ -611,7 +611,7 @@
                               "name": "Account",
                               "nodeType": "UserDefinedTypeName",
                               "referencedDeclaration": 12,
-                              "src": "554:7:0",
+                              "src": "553:7:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Account_$12_storage_ptr",
                                 "typeString": "struct Bank.Account"
@@ -632,7 +632,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 30,
-                              "src": "590:6:0",
+                              "src": "589:6:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -645,7 +645,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 26,
-                              "src": "598:4:0",
+                              "src": "597:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
@@ -661,7 +661,7 @@
                               "kind": "bool",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "604:4:0",
+                              "src": "603:4:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bool",
@@ -690,7 +690,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 12,
-                            "src": "582:7:0",
+                            "src": "581:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_struct$_Account_$12_storage_ptr_$",
                               "typeString": "type(struct Bank.Account storage pointer)"
@@ -704,14 +704,14 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "582:27:0",
+                          "src": "581:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_memory",
                             "typeString": "struct Bank.Account memory"
                           }
                         },
                         "nodeType": "VariableDeclarationStatement",
-                        "src": "554:55:0"
+                        "src": "553:55:0"
                       },
                       {
                         "expression": {
@@ -730,7 +730,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 5,
-                              "src": "618:8:0",
+                              "src": "617:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                                 "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -744,7 +744,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 35,
-                              "src": "627:4:0",
+                              "src": "626:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
@@ -755,7 +755,7 @@
                             "isPure": false,
                             "lValueRequested": true,
                             "nodeType": "IndexAccess",
-                            "src": "618:14:0",
+                            "src": "617:14:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_storage",
                               "typeString": "struct Bank.Account storage ref"
@@ -770,13 +770,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 52,
-                            "src": "635:10:0",
+                            "src": "634:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_memory_ptr",
                               "typeString": "struct Bank.Account memory"
                             }
                           },
-                          "src": "618:27:0",
+                          "src": "617:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_storage",
                             "typeString": "struct Bank.Account storage ref"
@@ -784,17 +784,17 @@
                         },
                         "id": 64,
                         "nodeType": "ExpressionStatement",
-                        "src": "618:27:0"
+                        "src": "617:27:0"
                       }
                     ]
                   },
                   "id": 66,
                   "nodeType": "IfStatement",
-                  "src": "463:190:0",
+                  "src": "462:190:0",
                   "trueBody": {
                     "id": 50,
                     "nodeType": "Block",
-                    "src": "490:49:0",
+                    "src": "489:49:0",
                     "statements": [
                       {
                         "expression": {
@@ -815,7 +815,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 5,
-                                "src": "499:8:0",
+                                "src": "498:8:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                                   "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -829,7 +829,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 35,
-                                "src": "508:4:0",
+                                "src": "507:4:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address_payable",
                                   "typeString": "address payable"
@@ -840,7 +840,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "499:14:0",
+                              "src": "498:14:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Account_$12_storage",
                                 "typeString": "struct Bank.Account storage ref"
@@ -854,7 +854,7 @@
                             "memberName": "balance",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 7,
-                            "src": "499:22:0",
+                            "src": "498:22:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -869,13 +869,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 30,
-                            "src": "525:6:0",
+                            "src": "524:6:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "499:32:0",
+                          "src": "498:32:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -883,7 +883,7 @@
                         },
                         "id": 49,
                         "nodeType": "ExpressionStatement",
-                        "src": "499:32:0"
+                        "src": "498:32:0"
                       }
                     ]
                   }
@@ -899,7 +899,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 30,
-                        "src": "746:6:0",
+                        "src": "745:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -917,7 +917,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 175,
-                              "src": "762:4:0",
+                              "src": "761:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Bank_$109",
                                 "typeString": "contract Bank"
@@ -937,7 +937,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "754:7:0",
+                            "src": "753:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -952,7 +952,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "754:13:0",
+                          "src": "753:13:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -966,7 +966,7 @@
                         "memberName": "balance",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "754:21:0",
+                        "src": "753:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -989,7 +989,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "728:17:0",
+                      "src": "727:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
@@ -1003,7 +1003,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "728:48:0",
+                    "src": "727:48:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1011,7 +1011,7 @@
                   },
                   "id": 74,
                   "nodeType": "EmitStatement",
-                  "src": "723:53:0"
+                  "src": "722:53:0"
                 }
               ]
             },
@@ -1032,7 +1032,7 @@
                   "name": "name",
                   "nodeType": "VariableDeclaration",
                   "scope": 76,
-                  "src": "349:18:0",
+                  "src": "348:18:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -1043,7 +1043,7 @@
                     "id": 25,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "349:6:0",
+                    "src": "348:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -1053,16 +1053,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "348:20:0"
+              "src": "347:20:0"
             },
             "returnParameters": {
               "id": 28,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "384:0:0"
+              "src": "383:0:0"
             },
             "scope": 109,
-            "src": "327:455:0",
+            "src": "326:455:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
@@ -1071,7 +1071,7 @@
             "body": {
               "id": 107,
               "nodeType": "Block",
-              "src": "826:302:0",
+              "src": "825:301:0",
               "statements": [
                 {
                   "assignments": [
@@ -1084,7 +1084,7 @@
                       "name": "user",
                       "nodeType": "VariableDeclaration",
                       "scope": 107,
-                      "src": "833:20:0",
+                      "src": "832:20:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1095,7 +1095,7 @@
                         "id": 81,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "833:15:0",
+                        "src": "832:15:0",
                         "stateMutability": "payable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -1116,7 +1116,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 161,
-                      "src": "856:3:0",
+                      "src": "855:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -1130,14 +1130,14 @@
                     "memberName": "sender",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "856:10:0",
+                    "src": "855:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "833:33:0"
+                  "src": "832:33:0"
                 },
                 {
                   "expression": {
@@ -1150,7 +1150,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 78,
-                        "src": "962:6:0",
+                        "src": "961:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1171,7 +1171,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 82,
-                        "src": "948:4:0",
+                        "src": "947:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1185,7 +1185,7 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "948:13:0",
+                      "src": "947:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -1199,7 +1199,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "948:21:0",
+                    "src": "947:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1207,7 +1207,7 @@
                   },
                   "id": 91,
                   "nodeType": "ExpressionStatement",
-                  "src": "948:21:0"
+                  "src": "947:21:0"
                 },
                 {
                   "expression": {
@@ -1228,7 +1228,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 5,
-                          "src": "1006:8:0",
+                          "src": "1005:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                             "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -1242,7 +1242,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1015:4:0",
+                          "src": "1014:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -1253,7 +1253,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1006:14:0",
+                        "src": "1005:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Account_$12_storage",
                           "typeString": "struct Bank.Account storage ref"
@@ -1267,7 +1267,7 @@
                       "memberName": "balance",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 7,
-                      "src": "1006:22:0",
+                      "src": "1005:22:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -1282,13 +1282,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 78,
-                      "src": "1032:6:0",
+                      "src": "1031:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1006:32:0",
+                    "src": "1005:32:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1296,7 +1296,7 @@
                   },
                   "id": 98,
                   "nodeType": "ExpressionStatement",
-                  "src": "1006:32:0"
+                  "src": "1005:32:0"
                 },
                 {
                   "eventCall": {
@@ -1309,7 +1309,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 78,
-                        "src": "1091:6:0",
+                        "src": "1089:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1326,7 +1326,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 5,
-                            "src": "1099:8:0",
+                            "src": "1097:8:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                               "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -1340,7 +1340,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 82,
-                            "src": "1108:4:0",
+                            "src": "1106:4:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address_payable",
                               "typeString": "address payable"
@@ -1351,7 +1351,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1099:14:0",
+                          "src": "1097:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_storage",
                             "typeString": "struct Bank.Account storage ref"
@@ -1365,7 +1365,7 @@
                         "memberName": "balance",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 7,
-                        "src": "1099:22:0",
+                        "src": "1097:22:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1384,11 +1384,11 @@
                         }
                       ],
                       "id": 99,
-                      "name": "SuccessfulWithdrawl",
+                      "name": "SuccessfulWithdraw",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 24,
-                      "src": "1071:19:0",
+                      "src": "1070:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
@@ -1402,7 +1402,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1071:51:0",
+                    "src": "1070:50:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -1410,7 +1410,7 @@
                   },
                   "id": 106,
                   "nodeType": "EmitStatement",
-                  "src": "1066:56:0"
+                  "src": "1065:55:0"
                 }
               ]
             },
@@ -1431,7 +1431,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 108,
-                  "src": "806:11:0",
+                  "src": "805:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1442,7 +1442,7 @@
                     "id": 77,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "806:4:0",
+                    "src": "805:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1452,26 +1452,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "805:13:0"
+              "src": "804:13:0"
             },
             "returnParameters": {
               "id": 80,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "826:0:0"
+              "src": "825:0:0"
             },
             "scope": 109,
-            "src": "788:340:0",
+            "src": "787:339:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 110,
-        "src": "36:1095:0"
+        "src": "36:1093:0"
       }
     ],
-    "src": "0:1131:0"
+    "src": "0:1129:0"
   },
   "legacyAST": {
     "absolutePath": "/C/Users/bguillen/Documents/sandbox/dapp-pocs/send-eth-poc/contracts/Bank.sol",
@@ -1719,7 +1719,7 @@
             "anonymous": false,
             "documentation": null,
             "id": 24,
-            "name": "SuccessfulWithdrawl",
+            "name": "SuccessfulWithdraw",
             "nodeType": "EventDefinition",
             "parameters": {
               "id": 23,
@@ -1732,7 +1732,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 24,
-                  "src": "285:11:0",
+                  "src": "284:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1743,7 +1743,7 @@
                     "id": 19,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "285:4:0",
+                    "src": "284:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1759,7 +1759,7 @@
                   "name": "remainingBalance",
                   "nodeType": "VariableDeclaration",
                   "scope": 24,
-                  "src": "298:21:0",
+                  "src": "297:21:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1770,7 +1770,7 @@
                     "id": 21,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "298:4:0",
+                    "src": "297:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -1780,15 +1780,15 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "284:36:0"
+              "src": "283:36:0"
             },
-            "src": "259:62:0"
+            "src": "259:61:0"
           },
           {
             "body": {
               "id": 75,
               "nodeType": "Block",
-              "src": "384:398:0",
+              "src": "383:398:0",
               "statements": [
                 {
                   "assignments": [
@@ -1801,7 +1801,7 @@
                       "name": "amount",
                       "nodeType": "VariableDeclaration",
                       "scope": 75,
-                      "src": "391:11:0",
+                      "src": "390:11:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1812,7 +1812,7 @@
                         "id": 29,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
-                        "src": "391:4:0",
+                        "src": "390:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -1832,7 +1832,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 161,
-                      "src": "405:3:0",
+                      "src": "404:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -1846,14 +1846,14 @@
                     "memberName": "value",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "405:9:0",
+                    "src": "404:9:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "391:23:0"
+                  "src": "390:23:0"
                 },
                 {
                   "assignments": [
@@ -1866,7 +1866,7 @@
                       "name": "user",
                       "nodeType": "VariableDeclaration",
                       "scope": 75,
-                      "src": "421:20:0",
+                      "src": "420:20:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -1877,7 +1877,7 @@
                         "id": 34,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "421:15:0",
+                        "src": "420:15:0",
                         "stateMutability": "payable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -1898,7 +1898,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 161,
-                      "src": "444:3:0",
+                      "src": "443:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -1912,14 +1912,14 @@
                     "memberName": "sender",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "444:10:0",
+                    "src": "443:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "421:33:0"
+                  "src": "420:33:0"
                 },
                 {
                   "condition": {
@@ -1933,7 +1933,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 5,
-                        "src": "467:8:0",
+                        "src": "466:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                           "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -1947,7 +1947,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 35,
-                        "src": "476:4:0",
+                        "src": "475:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -1958,7 +1958,7 @@
                       "isPure": false,
                       "lValueRequested": false,
                       "nodeType": "IndexAccess",
-                      "src": "467:14:0",
+                      "src": "466:14:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_struct$_Account_$12_storage",
                         "typeString": "struct Bank.Account storage ref"
@@ -1972,7 +1972,7 @@
                     "memberName": "exists",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": 11,
-                    "src": "467:21:0",
+                    "src": "466:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -1981,7 +1981,7 @@
                   "falseBody": {
                     "id": 65,
                     "nodeType": "Block",
-                    "src": "545:108:0",
+                    "src": "544:108:0",
                     "statements": [
                       {
                         "assignments": [
@@ -1994,7 +1994,7 @@
                             "name": "newAccount",
                             "nodeType": "VariableDeclaration",
                             "scope": 65,
-                            "src": "554:25:0",
+                            "src": "553:25:0",
                             "stateVariable": false,
                             "storageLocation": "memory",
                             "typeDescriptions": {
@@ -2007,7 +2007,7 @@
                               "name": "Account",
                               "nodeType": "UserDefinedTypeName",
                               "referencedDeclaration": 12,
-                              "src": "554:7:0",
+                              "src": "553:7:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Account_$12_storage_ptr",
                                 "typeString": "struct Bank.Account"
@@ -2028,7 +2028,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 30,
-                              "src": "590:6:0",
+                              "src": "589:6:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
                                 "typeString": "uint256"
@@ -2041,7 +2041,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 26,
-                              "src": "598:4:0",
+                              "src": "597:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_string_memory_ptr",
                                 "typeString": "string memory"
@@ -2057,7 +2057,7 @@
                               "kind": "bool",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "604:4:0",
+                              "src": "603:4:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_bool",
@@ -2086,7 +2086,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 12,
-                            "src": "582:7:0",
+                            "src": "581:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_struct$_Account_$12_storage_ptr_$",
                               "typeString": "type(struct Bank.Account storage pointer)"
@@ -2100,14 +2100,14 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "582:27:0",
+                          "src": "581:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_memory",
                             "typeString": "struct Bank.Account memory"
                           }
                         },
                         "nodeType": "VariableDeclarationStatement",
-                        "src": "554:55:0"
+                        "src": "553:55:0"
                       },
                       {
                         "expression": {
@@ -2126,7 +2126,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 5,
-                              "src": "618:8:0",
+                              "src": "617:8:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                                 "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -2140,7 +2140,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 35,
-                              "src": "627:4:0",
+                              "src": "626:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address_payable",
                                 "typeString": "address payable"
@@ -2151,7 +2151,7 @@
                             "isPure": false,
                             "lValueRequested": true,
                             "nodeType": "IndexAccess",
-                            "src": "618:14:0",
+                            "src": "617:14:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_storage",
                               "typeString": "struct Bank.Account storage ref"
@@ -2166,13 +2166,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 52,
-                            "src": "635:10:0",
+                            "src": "634:10:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_struct$_Account_$12_memory_ptr",
                               "typeString": "struct Bank.Account memory"
                             }
                           },
-                          "src": "618:27:0",
+                          "src": "617:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_storage",
                             "typeString": "struct Bank.Account storage ref"
@@ -2180,17 +2180,17 @@
                         },
                         "id": 64,
                         "nodeType": "ExpressionStatement",
-                        "src": "618:27:0"
+                        "src": "617:27:0"
                       }
                     ]
                   },
                   "id": 66,
                   "nodeType": "IfStatement",
-                  "src": "463:190:0",
+                  "src": "462:190:0",
                   "trueBody": {
                     "id": 50,
                     "nodeType": "Block",
-                    "src": "490:49:0",
+                    "src": "489:49:0",
                     "statements": [
                       {
                         "expression": {
@@ -2211,7 +2211,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 5,
-                                "src": "499:8:0",
+                                "src": "498:8:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                                   "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -2225,7 +2225,7 @@
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
                                 "referencedDeclaration": 35,
-                                "src": "508:4:0",
+                                "src": "507:4:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_address_payable",
                                   "typeString": "address payable"
@@ -2236,7 +2236,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "nodeType": "IndexAccess",
-                              "src": "499:14:0",
+                              "src": "498:14:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_struct$_Account_$12_storage",
                                 "typeString": "struct Bank.Account storage ref"
@@ -2250,7 +2250,7 @@
                             "memberName": "balance",
                             "nodeType": "MemberAccess",
                             "referencedDeclaration": 7,
-                            "src": "499:22:0",
+                            "src": "498:22:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
@@ -2265,13 +2265,13 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 30,
-                            "src": "525:6:0",
+                            "src": "524:6:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
                               "typeString": "uint256"
                             }
                           },
-                          "src": "499:32:0",
+                          "src": "498:32:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
@@ -2279,7 +2279,7 @@
                         },
                         "id": 49,
                         "nodeType": "ExpressionStatement",
-                        "src": "499:32:0"
+                        "src": "498:32:0"
                       }
                     ]
                   }
@@ -2295,7 +2295,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 30,
-                        "src": "746:6:0",
+                        "src": "745:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2313,7 +2313,7 @@
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 175,
-                              "src": "762:4:0",
+                              "src": "761:4:0",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_contract$_Bank_$109",
                                 "typeString": "contract Bank"
@@ -2333,7 +2333,7 @@
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "754:7:0",
+                            "src": "753:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
@@ -2348,7 +2348,7 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "754:13:0",
+                          "src": "753:13:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -2362,7 +2362,7 @@
                         "memberName": "balance",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": null,
-                        "src": "754:21:0",
+                        "src": "753:21:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2385,7 +2385,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 18,
-                      "src": "728:17:0",
+                      "src": "727:17:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
@@ -2399,7 +2399,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "728:48:0",
+                    "src": "727:48:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2407,7 +2407,7 @@
                   },
                   "id": 74,
                   "nodeType": "EmitStatement",
-                  "src": "723:53:0"
+                  "src": "722:53:0"
                 }
               ]
             },
@@ -2428,7 +2428,7 @@
                   "name": "name",
                   "nodeType": "VariableDeclaration",
                   "scope": 76,
-                  "src": "349:18:0",
+                  "src": "348:18:0",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -2439,7 +2439,7 @@
                     "id": 25,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "349:6:0",
+                    "src": "348:6:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -2449,16 +2449,16 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "348:20:0"
+              "src": "347:20:0"
             },
             "returnParameters": {
               "id": 28,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "384:0:0"
+              "src": "383:0:0"
             },
             "scope": 109,
-            "src": "327:455:0",
+            "src": "326:455:0",
             "stateMutability": "payable",
             "superFunction": null,
             "visibility": "public"
@@ -2467,7 +2467,7 @@
             "body": {
               "id": 107,
               "nodeType": "Block",
-              "src": "826:302:0",
+              "src": "825:301:0",
               "statements": [
                 {
                   "assignments": [
@@ -2480,7 +2480,7 @@
                       "name": "user",
                       "nodeType": "VariableDeclaration",
                       "scope": 107,
-                      "src": "833:20:0",
+                      "src": "832:20:0",
                       "stateVariable": false,
                       "storageLocation": "default",
                       "typeDescriptions": {
@@ -2491,7 +2491,7 @@
                         "id": 81,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
-                        "src": "833:15:0",
+                        "src": "832:15:0",
                         "stateMutability": "payable",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
@@ -2512,7 +2512,7 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 161,
-                      "src": "856:3:0",
+                      "src": "855:3:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_magic_message",
                         "typeString": "msg"
@@ -2526,14 +2526,14 @@
                     "memberName": "sender",
                     "nodeType": "MemberAccess",
                     "referencedDeclaration": null,
-                    "src": "856:10:0",
+                    "src": "855:10:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
                       "typeString": "address payable"
                     }
                   },
                   "nodeType": "VariableDeclarationStatement",
-                  "src": "833:33:0"
+                  "src": "832:33:0"
                 },
                 {
                   "expression": {
@@ -2546,7 +2546,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 78,
-                        "src": "962:6:0",
+                        "src": "961:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2567,7 +2567,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 82,
-                        "src": "948:4:0",
+                        "src": "947:4:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
@@ -2581,7 +2581,7 @@
                       "memberName": "transfer",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": null,
-                      "src": "948:13:0",
+                      "src": "947:13:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_transfer_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
@@ -2595,7 +2595,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "948:21:0",
+                    "src": "947:21:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2603,7 +2603,7 @@
                   },
                   "id": 91,
                   "nodeType": "ExpressionStatement",
-                  "src": "948:21:0"
+                  "src": "947:21:0"
                 },
                 {
                   "expression": {
@@ -2624,7 +2624,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 5,
-                          "src": "1006:8:0",
+                          "src": "1005:8:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                             "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -2638,7 +2638,7 @@
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
                           "referencedDeclaration": 82,
-                          "src": "1015:4:0",
+                          "src": "1014:4:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address_payable",
                             "typeString": "address payable"
@@ -2649,7 +2649,7 @@
                         "isPure": false,
                         "lValueRequested": false,
                         "nodeType": "IndexAccess",
-                        "src": "1006:14:0",
+                        "src": "1005:14:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_struct$_Account_$12_storage",
                           "typeString": "struct Bank.Account storage ref"
@@ -2663,7 +2663,7 @@
                       "memberName": "balance",
                       "nodeType": "MemberAccess",
                       "referencedDeclaration": 7,
-                      "src": "1006:22:0",
+                      "src": "1005:22:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
@@ -2678,13 +2678,13 @@
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 78,
-                      "src": "1032:6:0",
+                      "src": "1031:6:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
                         "typeString": "uint256"
                       }
                     },
-                    "src": "1006:32:0",
+                    "src": "1005:32:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2692,7 +2692,7 @@
                   },
                   "id": 98,
                   "nodeType": "ExpressionStatement",
-                  "src": "1006:32:0"
+                  "src": "1005:32:0"
                 },
                 {
                   "eventCall": {
@@ -2705,7 +2705,7 @@
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
                         "referencedDeclaration": 78,
-                        "src": "1091:6:0",
+                        "src": "1089:6:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2722,7 +2722,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 5,
-                            "src": "1099:8:0",
+                            "src": "1097:8:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_address_$_t_struct$_Account_$12_storage_$",
                               "typeString": "mapping(address => struct Bank.Account storage ref)"
@@ -2736,7 +2736,7 @@
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
                             "referencedDeclaration": 82,
-                            "src": "1108:4:0",
+                            "src": "1106:4:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address_payable",
                               "typeString": "address payable"
@@ -2747,7 +2747,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "nodeType": "IndexAccess",
-                          "src": "1099:14:0",
+                          "src": "1097:14:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_struct$_Account_$12_storage",
                             "typeString": "struct Bank.Account storage ref"
@@ -2761,7 +2761,7 @@
                         "memberName": "balance",
                         "nodeType": "MemberAccess",
                         "referencedDeclaration": 7,
-                        "src": "1099:22:0",
+                        "src": "1097:22:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
@@ -2780,11 +2780,11 @@
                         }
                       ],
                       "id": 99,
-                      "name": "SuccessfulWithdrawl",
+                      "name": "SuccessfulWithdraw",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
                       "referencedDeclaration": 24,
-                      "src": "1071:19:0",
+                      "src": "1070:18:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (uint256,uint256)"
@@ -2798,7 +2798,7 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "1071:51:0",
+                    "src": "1070:50:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
@@ -2806,7 +2806,7 @@
                   },
                   "id": 106,
                   "nodeType": "EmitStatement",
-                  "src": "1066:56:0"
+                  "src": "1065:55:0"
                 }
               ]
             },
@@ -2827,7 +2827,7 @@
                   "name": "amount",
                   "nodeType": "VariableDeclaration",
                   "scope": 108,
-                  "src": "806:11:0",
+                  "src": "805:11:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -2838,7 +2838,7 @@
                     "id": 77,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
-                    "src": "806:4:0",
+                    "src": "805:4:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -2848,26 +2848,26 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "805:13:0"
+              "src": "804:13:0"
             },
             "returnParameters": {
               "id": 80,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "826:0:0"
+              "src": "825:0:0"
             },
             "scope": 109,
-            "src": "788:340:0",
+            "src": "787:339:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
         "scope": 110,
-        "src": "36:1095:0"
+        "src": "36:1093:0"
       }
     ],
-    "src": "0:1131:0"
+    "src": "0:1129:0"
   },
   "compiler": {
     "name": "solc",
@@ -2902,7 +2902,7 @@
     }
   },
   "schemaVersion": "3.2.3",
-  "updatedAt": "2021-08-02T13:44:11.374Z",
+  "updatedAt": "2021-08-02T13:51:49.685Z",
   "devdoc": {
     "methods": {}
   },

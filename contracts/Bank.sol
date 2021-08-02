@@ -10,7 +10,7 @@ contract Bank {
   }
 
   event SuccessfulDeposit(uint amount, uint smartContractBalance);
-  event SuccessfulWithdrawl(uint amount, uint remainingBalance);
+  event SuccessfulWithdraw(uint amount, uint remainingBalance);
 
   function storePayment(string memory name) public payable {
     uint amount = msg.value;
@@ -41,6 +41,6 @@ contract Bank {
     accounts[user].balance -= amount;
 
     // emit event
-    emit SuccessfulWithdrawl(amount, accounts[user].balance);
+    emit SuccessfulWithdraw(amount, accounts[user].balance);
   }
 }
