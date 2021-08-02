@@ -9,7 +9,7 @@ contract Bank {
     bool exists;
   }
 
-  event SuccessfulDeposit(uint amount, uint smartContractBalance);
+  event SuccessfulDeposit(uint amount, uint smartContractBalance, uint newAccountBalance);
   event SuccessfulWithdraw(uint amount, uint remainingBalance);
 
   function storePayment(string memory name) public payable {
@@ -26,7 +26,7 @@ contract Bank {
     /**
      * When to use an event versus return?
      */
-    emit SuccessfulDeposit(amount, address(this).balance);
+    emit SuccessfulDeposit(amount, address(this).balance, accounts[user].balance);
   }
 
   function withdraw(uint amount) public {
