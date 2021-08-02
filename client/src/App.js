@@ -78,9 +78,11 @@ export default function App() {
     listenToSuccessfulDeposit();
     
     const { name, amount } = depositForm;
-    const { contract, address } = appData;
-    
-    await contract.methods.storePayment(name).send({ from: address, value: amount });
+    const { contract, address, web3 } = appData;
+
+    const valueInWei = web3.utils.toWei(`${amount}`, 'ether');
+
+    await contract.methods.storePayment(name).send({ from: address, value: valueInWei });
   }
   
   async function onSubmitWithdraw(event) {
