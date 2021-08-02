@@ -62,7 +62,8 @@ export default function App() {
   return (
     appData ?
       <div className="app">
-        <h1>Deposit Form</h1>
+        <h1>Bank</h1>
+        <h2>Deposit Form</h2>
         <form onSubmit={onSubmit}>
           <div>
             <label>Name:</label>
