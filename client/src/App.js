@@ -90,10 +90,12 @@ export default function App() {
 
     listenToSuccessfulWithdraw();
 
-    const { address, contract } = appData;
+    const { address, contract, web3 } = appData;
     const { amount } = withdrawForm;
 
-    await contract.methods.withdraw(parseInt(amount)).send({ from: address });
+    const valueInWei = web3.utils.toWei(`${amount}`, 'ether');
+
+    await contract.methods.withdraw(parseInt(valueInWei)).send({ from: address });
   }
 
   return (
