@@ -12,6 +12,10 @@ contract Bank {
   event SuccessfulDeposit(uint amount, uint smartContractBalance, uint newAccountBalance);
   event SuccessfulWithdraw(uint amount, uint remainingBalance);
 
+  function getBalance() public view returns (uint balance) {
+    balance = accounts[msg.sender].balance;
+  }
+
   function storePayment(string memory name) public payable {
     uint amount = msg.value;
     address payable user = msg.sender;
