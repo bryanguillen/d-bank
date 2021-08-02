@@ -6,6 +6,7 @@ import "./App.css";
 
 export default function App() {
   const [appData, setAppData] = useState(null);
+  const [balance, setBalance] = useState('loading balance...');
   const [depositForm, setDepositForm] = useState({name: '', amount: 0});
   const [withdrawForm, setWithdrawForm] = useState({ amount: 0 });
 
@@ -35,6 +36,15 @@ export default function App() {
       }
     })();
   }, []);
+
+  useEffect(() => {
+    (async function() {
+      if (appData) {
+        const { contract, address } = appData;
+        setBalance(await contract.methods.getBalance().call({ from: address }));
+      }
+    })();
+  }, [appData]);
 
   function listenToSuccessfulDeposit() {
     const { contract } = appData;
@@ -86,6 +96,8 @@ export default function App() {
     appData ?
       <div className="app">
         <h1>Bank</h1>
+        <h2>Balance</h2>
+        <div>{balance}</div>
         <h2>Deposit Form</h2>
         <form onSubmit={onSubmit}>
           <div>
