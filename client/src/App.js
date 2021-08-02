@@ -7,6 +7,7 @@ import "./App.css";
 export default function App() {
   const [appData, setAppData] = useState(null);
   const [depositForm, setDepositForm] = useState({name: '', amount: 0});
+  const [withdrawForm, setWithdrawForm] = useState({ amount: 0 });
 
   useEffect(() => {
     (async function() {
@@ -48,15 +49,27 @@ export default function App() {
     setDepositForm(previousState => ({...previousState, [name]: value}));
   }
 
+  function onChangeWithdraw(event) {
+    const { value } = event.target;
+    setWithdrawForm(() => ({amount: value}));
+  }
+
   async function onSubmit(event) {
     event.preventDefault();
 
     listenToSuccessfulDeposit();
-
+    
     const { name, amount } = depositForm;
     const { contract, address } = appData;
-
+    
     await contract.methods.storePayment(name).send({ from: address, value: amount });
+  }
+  
+  async function onSubmitWithdraw(event) {
+    event.preventDefault();
+
+    const { amount } = withdrawForm;
+    console.log(parseInt(amount));
   }
 
   return (
@@ -72,6 +85,16 @@ export default function App() {
           <div>
             <label>Amount:</label>
             <input name="amount" id="amount" value={depositForm.amount} onChange={onChange}/>
+          </div>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+        <h2>Withdraw Form</h2>
+        <form onSubmit={onSubmitWithdraw}>
+          <div>
+            <label>Amount:</label>
+            <input name="amountWithdraw" id="amountWithdraw" value={withdrawForm.amount} onChange={onChangeWithdraw}/>
           </div>
           <div>
             <button type="submit">Submit</button>
