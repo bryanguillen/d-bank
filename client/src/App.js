@@ -40,8 +40,9 @@ export default function App() {
   useEffect(() => {
     (async function() {
       if (appData) {
-        const { contract, address } = appData;
-        setBalance(await contract.methods.getBalance().call({ from: address }));
+        const { contract, address, web3 } = appData;
+        const amountInWei = await contract.methods.getBalance().call({ from: address });
+        setBalance(web3.utils.fromWei(amountInWei, 'ether'));
       }
     })();
   }, [appData]);
